@@ -1,0 +1,62 @@
+#!/usr/bin/env python3
+import sys
+from sam.tools import input_number
+VERSION=int(sys.argv[1])
+
+if VERSION==0:
+    print ('version 0')
+    name = input('Please enter your name: ')
+    if name=='Samantha': print(f'Welcome back Samantha. Enjoy the party!!')
+    elif name=='Bryan': print(f'Welcome back Bryan. Enjoy the party!!')
+    elif name=='Steve': print(f'Welcome back Steve.. Enjoy the party!!')
+    else:
+        age = input_number( f'How old are you?'  )
+        if age==None: print( f'That is not an age. Get out of here!' )
+        elif age<19: print( f'Enjoy the party {name}, but no alcohol!')
+        else: print( f'Enjoy the party {name}. The bar is open!')
+
+if VERSION==1:
+    print ('version 1')
+    name = input('Please enter your name: ')
+    if name=='Samantha': print(f'Welcome back {name}. Enjoy the party!!')
+    elif name=='Bryan': print(f'Welcome back {name}. Enjoy the party!!')
+    elif name=='Steve': print(f'Welcome back {name}. Enjoy the party!!')
+    else:
+        age = input_number( f'How old are you?'  )
+        if age==None: print( f'That is not an age. Get out of here!' )
+        elif age<19: print( f'Enjoy the party {name}, but no alcohol!')
+        else: print( f'Enjoy the party {name}. The bar is open!')
+
+if VERSION==2:
+    print ('version 2')
+    name = input('Please enter your name: ')
+    if (name=='Samantha' or name=='Bryan' or name=='Steve'):
+        print(f'Welcome back {name}. Enjoy the party!!')
+    else:
+        age = input_number( f'How old are you?'  )
+        if age==None: print( f'That is not an age. Get out of here!' )
+        elif age<19: print( f'Enjoy the party {name}, but no alcohol!')
+        else: print( f'Enjoy the party {name}. The bar is open!')
+
+if VERSION==3:
+    print ('version 3')
+    name = input('Please enter your name: ')
+    if name in ['Samantha', 'Bryan', 'Steve']:
+        print(f'Welcome back {name}. Enjoy the party!!')
+    else:
+        age = input_number( f'How old are you?'  )
+        if age==None: print( f'That is not an age. Get out of here!' )
+        elif age<19: print( f'Enjoy the party {name}, but no alcohol!')
+        else: print( f'Enjoy the party {name}. The bar is open!')
+
+if VERSION==4:
+    print ('version 4')
+    VIPLIST = ['Samantha', 'Bryan', 'Steve']
+    name = input('Please enter your name: ')
+    if name in VIPLIST:
+        print(f'Welcome back {name}. Enjoy the party!!')
+    else:
+        age = input_number( f'How old are you?'  )
+        if age==None: print( f'That is not an age. Get out of here!' )
+        elif age<19: print( f'Enjoy the party {name}, but no alcohol!')
+        else: print( f'Enjoy the party {name}. The bar is open!')
