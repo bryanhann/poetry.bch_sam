@@ -1,0 +1,2 @@
+pytest 
+#export PYTHONPATH=$PYTHONPATH:$(dirname $0)/tests/lib

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 import sys
-import sam.tools
+import sam.expect
 
 def wraprun():
     target = sys.argv[1]
     args = sys.argv[2:].copy()
-    sam.tools.wraprun(target, args)
+    sam.expect.wraprun(target, args)
